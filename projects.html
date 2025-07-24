@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Yeohyun Jung</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="projects-list">
+                    <a href="data-manipulation.html" class="project-card">
+                        <div class="project-image">
+                            <img src="dm cards_25.png" alt="Data Manipulation in Personal Informatics">
+                        </div>
+                        <div class="project-content no-links">
+                            <h3 class="project-title">Thinking Outside of the Data Box</h3>
+                            <p class="project-description">Exploring data manipulation as an approach to address stagnation in personal informatics, through Insert, Delete, Transform, Increase, and Reduce</p>
+                        </div>
+                    </a>
+
+                    <a href="shorts-intervention.html" class="project-card">
+                        <div class="project-image">
+                            <img src="intervention_set.jpg" alt="Self-regulatory Intervention for Short-form Video">
+                        </div>
+                        <div class="project-content no-links">
+                            <h3 class="project-title">Shorts Intervention</h3>
+                            <p class="project-description">Intervention to support users to self-regulate their short-form video use, consisting of Goal Nudge, Viewing Checkpoint, Micro Reflection, and Viewing Logbook</p>
+                        </div>
+                    </a>
+
+                    <a href="oxynizer.html" class="project-card">
+                        <div class="project-image">
+                            <img src="Oxynizer 1.jpg" alt="Oxynizer: Sustainable & Non-electric Oxygen Generator">
+                        </div>
+                        <div class="project-content no-links">
+                            <h3 class="project-title">Oxynizer</h3>
+                            <p class="project-description">Sustainable, non-electric oxygen generator using bicycle pumps for immediate oxygen supply in developing countries</p>
+                        </div>
+                    </a>
+
+                    <a href="a-step.html" class="project-card">
+                        <div class="project-image">
+                            <img src="a-step_cover2.jpg" alt="a-step">
+                        </div>
+                        <div class="project-content no-links">
+                            <h3 class="project-title">a-step</h3>
+                            <p class="project-description">A curation platform featuring expert-selected videos on autism and developmental needs, helping users navigate complex information with trusted guidance</p>
+                        </div>
+                    </a>
+
+                    <a href="fluidtrack.html" class="project-card">
+                        <div class="project-image">
+                            <img src="ft_cover.png" alt="FluidTrack">
+                        </div>
+                        <div class="project-content no-links">
+                            <h3 class="project-title">FluidTrack</h3>
+                            <p class="project-description">Child-parent collaborative tracking system for pediatric voiding dysfunction, consisting of an app and wearable for tracking water intake, urination, and bowel movements</p>
+                        </div>
+                    </a>
+
+                    <a href="chorogi.html" class="project-card">
+                        <div class="project-image">
+                            <img src="초로기_cover.jpg" alt="초로기">
+                        </div>
+                        <div class="project-content no-links">
+                            <h3 class="project-title">초록이</h3>
+                            <p class="project-description">Application for early-stage dementia screening and clinical support <br> <i>(초록이-Chorogi: a name combining 'early-stage' and 'green' in Korean, symbolizing hope and new beginnings)</i></p>
+                        </div>
+                    </a>
+
+                    <!-- <div class="project-card">
+                        <div class="project-image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title"></h3>
+                            <p class="project-description"></p>
+                            <div class="project-links">
+                                <span class="project-link"></span>
+                                <span class="project-link award"></span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Yeohyun Jung. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+        
+        // 메뉴 링크 클릭 시 메뉴 닫기
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

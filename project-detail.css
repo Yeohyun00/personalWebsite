@@ -1,0 +1,348 @@
+/* Project Detail Page Styles */
+.project-header {
+    text-align: center;
+    padding: 80px 0 120px 0;
+}
+
+.project-main-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.project-subtitle {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.project-section {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+    margin-top: 80px;
+    font-style: italic;
+}
+
+.section-content {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Main Image */
+.main-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.placeholder-image {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-weight: 400;
+}
+
+.main-image-container .placeholder-image {
+    width: 500px;
+    height: 400px;
+    font-size: 1.1rem;
+}
+
+.main-image-container img {
+    max-width: 700px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin: 60px 0;
+}
+
+.grid-item {
+    line-height: 0;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item .placeholder-image {
+    width: 100%;
+    height: 300px;
+    font-size: 1rem;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    max-height: 400px;
+}
+
+/* Shorts intervention specific image sizing */
+img[src="sf_photo3.jpg"] {
+    max-height: 250px !important;
+    width: 85% !important;
+}
+
+/* Custom Grid for Data Manipulation Page */
+.image-grid-custom {
+    margin: 60px 0;
+}
+
+.grid-item-full {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.grid-item-full img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.grid-bottom-row {
+    display: flex;
+    width: 100%;
+}
+
+.grid-item-half {
+    width: 50%;
+}
+
+.grid-item-half img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Oxynizer Grid - prevent cropping and remove all gaps */
+.oxynizer-grid {
+    gap: 0px;
+    grid-template-rows: auto auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.oxynizer-grid .grid-item {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.oxynizer-grid .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Video Section */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video-container video {
+    max-width: 900px;
+    max-height: 600px;
+    width: 100%;
+    height: auto;
+}
+
+/* Project Info */
+.project-info {
+    background-color: #ffffff;
+    padding: 60px 0;
+    margin: 80px 0 0 0;
+    text-align: left;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #000;
+    width: 150px;
+    flex-shrink: 0;
+    font-size: 1rem;
+}
+
+.info-content {
+    flex: 1;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.info-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-content li {
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.info-content li:before {
+    content: "•";
+    color: #666;
+    position: absolute;
+    left: 0;
+}
+
+.info-content div {
+    margin-bottom: 4px;
+}
+
+.info-content div:last-child {
+    margin-bottom: 0;
+}
+
+.info-content br + a {
+    margin-left: 50px;
+}
+
+/* Outcome Links */
+.outcome-link {
+    color: #2362C2;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.outcome-link:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-header {
+        padding: 80px 0 60px 0;
+    }
+    
+    .project-main-title {
+        font-size: 1.8rem;
+    }
+    
+    .project-subtitle {
+        font-size: 1rem;
+    }
+    
+    .project-section {
+        margin-bottom: 60px;
+    }
+    
+    .main-image-container .placeholder-image {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+    
+    .main-image-container img {
+        max-width: 100%;
+        max-height: 350px;
+    }
+    
+    .video-container video {
+        max-width: 100%;
+        max-height: 400px;
+    }
+    
+    /* Oxynizer mobile gap */
+    .oxynizer-grid {
+        gap: 0px;
+        height: auto;
+    }
+    
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 0px;
+        margin: 40px 0;
+    }
+    
+    .grid-item .placeholder-image {
+        height: 250px;
+    }
+    
+    .grid-item img {
+        height: 250px;
+        object-fit: contain;
+    }
+    
+    /* Oxynizer mobile */
+    .oxynizer-grid .grid-item img {
+        object-fit: contain;
+    }
+    
+    /* Custom Grid Mobile */
+    .grid-bottom-row {
+        flex-direction: column;
+    }
+    
+    .grid-item-half {
+        width: 100%;
+    }
+    
+    .grid-item-full img {
+        height: 300px;
+        object-fit: contain;
+    }
+    
+    .grid-item-half img {
+        height: 300px;
+    }
+    
+    .project-info {
+        padding: 40px 0;
+        margin: 60px 0 0 0;
+    }
+    
+    .info-row {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .info-label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}

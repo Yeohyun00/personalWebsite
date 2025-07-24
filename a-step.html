@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a-step - Yeohyun Jung</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Header -->
+            <div class="project-header">
+                <h1 class="project-main-title">a-step</h1>
+                <p class="project-subtitle">A curation platform featuring expert-selected videos on autism and developmental needs, <br> helping users navigate complex information with trusted guidance</p>
+            </div>
+
+            <!-- Motivation Section -->
+            <div class="project-section">
+                <p class="section-content">
+                    It can be challenging for people with developmental disabilities, such as autism spectrum disorder, to find information that is both right and reliable. There is an overwhelming amount of content available online, which often leads to feelings of being lost about what to look at and confusion caused by false or misleading information.
+                </p>
+                <h2 class="section-title">How can we support them in watching and absorbing trustworthy videos?</h2>
+            </div>
+
+            <!-- Main Image -->
+            <div class="project-section">
+                <div class="main-image-container">
+                    <img src="a-step_cover2.jpg">
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="project-section">
+                <p class="section-content">
+                    In collaboration with the Jeju National University Hospital Developmental Disability Center, child psychiatrists, and experts in child development, we designed a-step, an application that curates videos carefully selected by professionals. Through the recommended video lists, users can easily find high-quality and trustworthy videos that match their needs and interests. If they are not sure which topics to start with, they can also follow preset curriculums we have created. Finding the right videos is important, but watching them effectively is just as crucial. To support this, we provide key summary notes for each video, created using NotebookLM, and a note-taking feature that allows users to freely write down their thoughts and what they have learned while watching. Through this platform, we aim to help individuals with developmental challenges watch reliable content with confidence and feel less overwhelmed by the vast amount of information available online.
+                </p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="project-section">
+                <div class="image-grid">
+                    <div class="grid-item">
+                        <img src="astep+2.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="astep+3.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="astep+4.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="astep+5.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Info -->
+            <div class="project-info">
+                <div class="info-row">
+                    <div class="info-label">Duration</div>
+                    <div class="info-content">
+                        <div>18 months</div>
+                        <div>(2024.01-2025.06)</div>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Keyword</div>
+                    <div class="info-content">
+                        Video curation<br>
+                        Information seeking support<br>
+                        Learning support
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Contribution</div>
+                    <div class="info-content">
+                        Concept Ideation <br>
+                        UX Design & Prototyping <br>
+                        Task Management <br>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Outcome</div>
+                    <div class="info-content">
+                        <div>Application: iOS & Android App</div>
+                    </div>
+                </div>
+                
+                <!-- <div class="info-row">
+                    <div class="info-label">What I have learned</div>
+                    <div class="info-content">
+                        [배운 점들을 적을 자리입니다]
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Yeohyun Jung. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

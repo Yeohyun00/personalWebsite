@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeohyun Jung</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="1673681131731-21 3.jpg" alt="Yeohyun Jung" class="profile-photo">
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="greeting">Hello <span class="wave">👋</span></h1>
+                        <div class="intro-text">
+                            <p>I am <strong>Yeohyun Jung (정여현)</strong>, and my interest lies at the intersection of Human-Computer Interaction (HCI) and well-being. I passionately study and design technologies that support user's health and well-being while preserving positive user experiences.</p>
+                            <p>I aim to bridge the gap between evolving technology and real-world being, contributing to find the right balance by listening to users and understanding what they truly need.</p>
+                            <p>I received my master's degree in Industrial Design at KAIST. I worked as the member of <a href="https://dxd-lab.github.io/" target="_blank" rel="noopener noreferrer">DxD Lab</a>, under the supervision of Professor <a href="https://galaxytourist.notion.site/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423" target="_blank" rel="noopener noreferrer">Hwajung Hong</a>. Before that, I received my bachelor's degree in Psychology from Yonsei University.</p>
+                        </div>
+                        <div class="contact-links">
+                            <a href="https://drive.google.com/file/d/1rk0XDgXywz6Rh_oUPg-8aEECvE8S6hYq/view?usp=sharing" class="contact-link" target="_blank" rel="noopener noreferrer">CV</a>
+                            <span class="divider">|</span>
+                            <a href="https://www.linkedin.com/in/yeohyun-jung-1061a724a/" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <span class="divider">|</span>
+                            <span class="contact-text"><a href="mailto:jadeyjung1129@gmail.com" class="contact-link">Email</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Projects</h3>
+                    <a href="projects.html" class="more-link">→ more</a>
+                </div>
+                <div class="projects-list">
+                    <a href="data-manipulation.html" class="project-card">
+                        <div class="project-image">
+                            <img src="dm cards_25.png" alt="Data Manipulation in Personal Informatics">
+                        </div>
+                        <div class="project-content no-links">
+                            <h3 class="project-title">Thinking Outside of the Data Box</h3>
+                            <p class="project-description">Exploring data manipulation as an approach to address stagnation in personal informatics, through Insert, Delete, Transform, Increase, and Reduce</p>
+                        </div>
+                    </a>
+
+                    <a href="shorts-intervention.html" class="project-card">
+                        <div class="project-image">
+                            <img src="intervention_set.jpg" alt="Self-regulatory Intervention for Short-form Video">
+                        </div>
+                        <div class="project-content no-links">
+                            <h3 class="project-title">Shorts Intervention</h3>
+                            <p class="project-description">Intervention to support users to self-regulate their short-form video use, consisting of Goal Nudge, Viewing Checkpoint, Micro Reflection, and Viewing Logbook</p>
+                        </div>
+                    </a>
+
+                    <!-- <div class="project-card">
+                        <div class="project-image">
+                            <img src="Oxynizer 1.jpg" alt="Oxynizer: Non-electric & Sustainable Oxygen Generator">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Oxynizer: Non-electric & Sustainable Oxygen Generator</h3>
+                            <p class="project-description">We designed a non-electric and sustainable oxygen generator which can provide 1.5-2 times the oxygen concentration of ambient air, by just connecting with bicycle air pump. It contains sustainable materials (Zeolite and Silica gel), making it reusable without additional costs.</p>
+                            <div class="project-links">
+                                <span class="project-link">➡️ James Dyson Design Award 2024, Prototype for Humanity 2024, IDEA 2025</span>
+                                <span class="project-link award">🏅 IDEA Bronze Award, James Dyson Design Award National Winner</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Yeohyun Jung. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+        
+        // 메뉴 링크 클릭 시 메뉴 닫기
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

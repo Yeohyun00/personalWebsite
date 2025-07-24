@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>초록이 - Yeohyun Jung</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Header -->
+            <div class="project-header">
+                <h1 class="project-main-title">초록이</h1>
+                <p class="project-subtitle">Application for early-stage dementia screening and clinical support<br><i>(초록이-Chorogi: a name combining 'early-stage' and 'green' in Korean, symbolizing hope and new beginnings)</i></p>
+            </div>
+
+            <!-- Motivation Section -->
+            <div class="project-section">
+                <p class="section-content">
+                    Early-stage dementia is rising quickly in South Korea, but not many people get checked early. This is because they don't know much about it, and going to the hospital for tests feels hard and inconvenient. Many people in their 40s to 60s think memory problems are just part of getting older or menopause, so they delay seeing a doctor.
+                </p>
+                <h2 class="section-title">How can we create an accessible digital tool for early-stage dementia screening?</h2>
+            </div>
+
+            <!-- Main Image -->
+            <div class="project-section">
+                <div class="main-image-container">
+                    <img src="초로기_cover.jpg">
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="project-section">
+                <p class="section-content">
+                    We started with a literature review on early-stage dementia and existing cognitive screening tools, followed by interviews with care workers to understand user needs and barriers to screening. Thematic analysis of the data revealed low awareness of early-stage dementia symptoms, difficulties in accessing screening services, and a lack of systematic support. Based on these insights, we developed the application concept by creating personas, a service blueprint, and “How Might We” questions. The final result was 초록이, a mobile app designed to support early screening of dementia by offering a digitized MMSE-K test, intuitive result displays, and caregiver-sharing features. It also reduces the burden of hospital appointments and accessing professional care by streamlining booking and providing a pre-visit checklist.
+                </p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="project-section">
+                <div class="image-grid">
+                    <div class="grid-item">
+                        <img src="ch_photo1.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="ch_photo2.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="ch_photo4.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="ch_photo5.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Info -->
+            <div class="project-info">
+                <div class="info-row">
+                    <div class="info-label">Duration</div>
+                    <div class="info-content">
+                        <div>3 months</div>
+                        <div>(2022.12-2023.02)</div>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Keyword</div>
+                    <div class="info-content">
+                        Early-stage dementia<br>
+                        Screening<br>
+                        Clinical support
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Contribution</div>
+                    <div class="info-content">
+                        Concept Ideation<br>
+                        User & Desk research<br>
+                        UX design
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Outcome</div>
+                    <div class="info-content">
+                        <div>Publication: <a href="초로기 치매 조기 선별을 위한 디지털 애플리케이션 컨셉 디자인.pdf" class="outcome-link" target="_blank">HCI Korea 2024 Paper</a></div>
+                        <div>Award: <a href="https://conference.hcikorea.org/hcik2024/programs/awarded_paper.asp" class="outcome-link" target="_blank">HCI Korea 2024 Best Oral Paper Award</a></div>
+                    </div>
+                </div>
+                
+                <!-- <div class="info-row">
+                    <div class="info-label">What I have learned</div>
+                    <div class="info-content">
+                        [배운 점들을 적을 자리입니다]
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Yeohyun Jung. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
