@@ -593,6 +593,13 @@ body {
         right: 0;
     }
     
+    .nav-menu.active .hamburger {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    
     .nav-container {
         padding: 0 16px;
         justify-content: flex-end;
