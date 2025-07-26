@@ -39,7 +39,7 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 40px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -196,14 +196,14 @@ body {
 
 .contact-link {
     text-decoration: none;
-    color: #2362C2;
+    color: #000;
     font-weight: 300;
-    transition: opacity 0.3s ease;
+    transition: color 0.3s ease;
     cursor: pointer;
 }
 
 .contact-link:hover {
-    opacity: 0.8;
+    color: #2362C2;
 }
 
 .contact-text {
@@ -517,9 +517,13 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero-section {
+        padding: 5px 0 80px 0;
+    }
+    
     .hero-content {
         flex-direction: column;
-        gap: 40px;
+        gap: 25px;
         text-align: left;
     }
     
@@ -580,7 +584,7 @@ body {
         align-items: center;
         padding: 20px;
         transition: right 0.3s ease;
-        gap: 60px;
+        gap: 120px;
         z-index: 999;
     }
     
@@ -593,7 +597,7 @@ body {
         right: 0;
     }
     
-    .nav-menu.active .hamburger {
+    .nav-container:has(.nav-menu.active) .hamburger {
         position: fixed;
         top: 20px;
         right: 20px;
@@ -617,6 +621,21 @@ body {
     
     .contact-links {
         justify-content: flex-start;
+        gap: 8px;
+        font-size: 14px;
+        flex-wrap: nowrap;
+    }
+    
+    .contact-link {
+        font-size: 14px;
+    }
+    
+    .projects-section {
+        padding: 30px 0 80px 0;
+    }
+    
+    .project-card:first-child .project-content {
+        margin-top: 25px;
     }
 }
 
@@ -664,11 +683,19 @@ body {
         margin-bottom: 6px;
     }
     
+    .pub-badge {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+    }
+    
     .nav-menu {
         gap: 16px;
     }
     
     .nav-link {
-        font-size: 14px;
+        font-size: 16px;
     }
 }

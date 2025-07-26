@@ -1,0 +1,48 @@
+{
+  "redirects": [
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/projects",
+      "destination": "/projects.html"
+    },
+    {
+      "source": "/publications", 
+      "destination": "/publications.html"
+    },
+    {
+      "source": "/data-manipulation",
+      "destination": "/data-manipulation.html"
+    },
+    {
+      "source": "/shorts-intervention",
+      "destination": "/shorts-intervention.html"
+    },
+    {
+      "source": "/oxynizer",
+      "destination": "/oxynizer.html"
+    },
+    {
+      "source": "/chorogi",
+      "destination": "/chorogi.html"
+    },
+    {
+      "source": "/fluidtrack",
+      "destination": "/fluidtrack.html"
+    },
+    {
+      "source": "/a-step",
+      "destination": "/a-step.html"
+    }
+  ]
+}

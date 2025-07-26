@@ -248,13 +248,13 @@ img[src="shortsIntervention_3.jpg"] {
 
 /* Outcome Links */
 .outcome-link {
-    color: #2362C2;
+    color: #000;
     text-decoration: none;
-    transition: opacity 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .outcome-link:hover {
-    opacity: 0.8;
+    color: #2362C2;
 }
 
 /* Responsive Design */
@@ -268,11 +268,19 @@ img[src="shortsIntervention_3.jpg"] {
     }
     
     .project-subtitle {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .project-section {
         margin-bottom: 60px;
+    }
+    
+    .section-title br {
+        display: none;
+    }
+    
+    .project-subtitle br {
+        display: none;
     }
     
     .main-image-container .placeholder-image {
