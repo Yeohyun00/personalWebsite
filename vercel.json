@@ -9,6 +9,46 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/projects.html",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/publications.html",
+      "destination": "/publications",
+      "permanent": true
+    },
+    {
+      "source": "/data-manipulation.html",
+      "destination": "/data-manipulation",
+      "permanent": true
+    },
+    {
+      "source": "/shorts-intervention.html",
+      "destination": "/shorts-intervention",
+      "permanent": true
+    },
+    {
+      "source": "/oxynizer.html",
+      "destination": "/oxynizer",
+      "permanent": true
+    },
+    {
+      "source": "/chorogi.html",
+      "destination": "/chorogi",
+      "permanent": true
+    },
+    {
+      "source": "/fluidtrack.html",
+      "destination": "/fluidtrack",
+      "permanent": true
+    },
+    {
+      "source": "/a-step.html",
+      "destination": "/a-step",
+      "permanent": true
     }
   ],
   "rewrites": [
